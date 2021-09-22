@@ -7,6 +7,12 @@ namespace ProductSales
         static void Main(string[] args)
         {
 
+            //Cliente solicito un cambio en el programa que realice lo siguiente
+            // Que pueda agregar el impuesto pero que sea el mismo usuario que pueda decir si el producto se le aplica impuesto 
+            // Que sea el mismo usuario que pueda decir si el producto se le aplica descuento
+
+
+
             Product product = new Product(false, false);
             Sale sale = new Sale();
 
