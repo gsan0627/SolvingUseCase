@@ -11,6 +11,7 @@ namespace ProductSales
             IsDiscount = isDiscount;
             IsTax = isTax;
         }
+        public int Id;
         public int Qty;
         public string Name;
         public double UnitPrice;

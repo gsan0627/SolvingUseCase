@@ -4,14 +4,23 @@ using System.Text;
 
 namespace ProductSales
 {
-    public class Sale
-    {
+    public class SaleService
+    {        
         private const int DISCOUNT = 15;
         private const int DISCOUNT_AMOUNT = 1000;
 
-        public double GetTotalPay(Product product)
+        private Sale _food;
+        private Sale _drink;
+
+        public SaleService(Sale food, Sale drink)
         {
-            return (product.UnitPrice * product.Qty);
+            _food = food;
+            _drink = drink;
+        }
+
+        public double GetTotalPay()
+        {
+            return _food.Product.UnitPrice + _drink.Product.UnitPrice;
         }
 
         public bool GreaterAmountZero(double amountPay)
@@ -28,5 +37,6 @@ namespace ProductSales
         {
             return (amountPay * DISCOUNT) / 100;
         }
+
     }
 }

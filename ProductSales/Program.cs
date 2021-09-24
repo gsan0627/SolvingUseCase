@@ -7,45 +7,30 @@ namespace ProductSales
         static void Main(string[] args)
         {
 
-            //Cliente solicito un cambio en el programa que realice lo siguiente
-            // Que pueda agregar el impuesto pero que sea el mismo usuario que pueda decir si el producto se le aplica impuesto 
-            // Que sea el mismo usuario que pueda decir si el producto se le aplica descuento
+            Product food = new Product(false, false);
+            Product drink = new Product(false, false);
 
+            Sale foodSale = new Sale();
+            Sale drinkSale = new Sale();
+                       
+            ProductService productService = new ProductService();
+                       
+            food.Id = productService.ShowMenu();
+            food.UnitPrice = productService.CalculatePriceSelectedFood(food.Id);
+            food.Name = productService.GetFoodProduct(food.Id);
+            foodSale.Product = food;
 
+            drink.Id = productService.ShowDrink();
+            drink.UnitPrice = productService.CalculatePriceSelectedDrink(drink.Id);
+            drink.Name = productService.GetDrinkProduct(drink.Id);
+            drinkSale.Product = drink;
 
-            Product product = new Product(false, false);
-            Sale sale = new Sale();
+            SaleService sale = new SaleService(foodSale, drinkSale);
+            double total = sale.GetTotalPay();
 
-            Console.WriteLine("Introduce el producto que deseas facturar");
-            product.Name = Console.ReadLine();
+            string result = total <= 0 ? "El cliente no selecciono ningun producto" : "Total a pagar es :" + total;
 
-            Console.WriteLine("Introduce la cantidad del producto a facturar");
-            product.Qty = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Introduce el precio unitario del producto a facturar");
-            product.UnitPrice = Convert.ToDouble(Console.ReadLine());
-
-            double totalPay = sale.GetTotalPay(product);
-
-            string showSaleInformation = string.Format("El {0}: {1} x {2} = {3}",
-                product.Name, product.Qty, product.UnitPrice, totalPay);
-
-            if (sale.GreaterAmountZero(totalPay) == false)
-            {
-                Console.WriteLine("El monto debe ser mayor a cero (0)");
-            }
-            else
-            {
-                if (sale.AmountPayMayApplyDiscount(totalPay, product.IsDiscount))
-                {
-                    product.Discount = sale.GetDiscount(totalPay);
-                    totalPay -= product.Discount;
-                }
-                Console.WriteLine(showSaleInformation);
-                Console.WriteLine("Descuento: " + product.Discount);
-                Console.WriteLine("El total a pagar es: " + totalPay);
-            }
-
+            Console.WriteLine(result);   
             Console.ReadKey();
         }
     }
