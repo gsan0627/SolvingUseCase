@@ -6,31 +6,45 @@ namespace ProductSales
     {
         static void Main(string[] args)
         {
+            string press;
+            double total = 0.0;
 
-            Product food = new Product(false, false);
-            Product drink = new Product(false, false);
-
-            Sale foodSale = new Sale();
-            Sale drinkSale = new Sale();
-                       
             ProductService productService = new ProductService();
-                       
-            food.Id = productService.ShowMenu();
-            food.UnitPrice = productService.CalculatePriceSelectedFood(food.Id);
-            food.Name = productService.GetFoodProduct(food.Id);
-            foodSale.Product = food;
+            SaleService saleService = new SaleService();
+          
+            do
+            {
+                Console.Clear();
+                var products = productService.GetAll();
+                int count = 0;
+                int length = products.Length - 1;
 
-            drink.Id = productService.ShowDrink();
-            drink.UnitPrice = productService.CalculatePriceSelectedDrink(drink.Id);
-            drink.Name = productService.GetDrinkProduct(drink.Id);
-            drinkSale.Product = drink;
+                Console.WriteLine("Seleccione el producto");
+                while (length >= count)
+                {                    
+                    Console.WriteLine("{0} - {1}", productService.ShowProductQuantity(count), 
+                        productService.GetProductAsString(products[count]));
+                    count++;
+                }
 
-            SaleService sale = new SaleService(foodSale, drinkSale);
-            double total = sale.GetTotalPay();
+                int selected = Convert.ToInt32(Console.ReadLine());
+                Product productSelected = products[selected - 1];
 
-            string result = total <= 0 ? "El cliente no selecciono ningun producto" : "Total a pagar es :" + total;
+                total += productSelected.UnitPrice;
+                Console.WriteLine("Deseas agregar otro producto a tu lista, presiona S para continuar o cualquier tecla para salir");
+                press = Console.ReadLine();
 
-            Console.WriteLine(result);   
+            } while (press == "S" || press == "s");
+
+            if (saleService.GreaterTotalZero(total))
+            {
+                Console.WriteLine("El total a pagar es: " + total);
+            }
+            else
+            {
+                Console.WriteLine("El cliente no selecciono ningun producto");
+            }
+
             Console.ReadKey();
         }
     }

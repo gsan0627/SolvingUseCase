@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace ProductSales
 {
     public static class Constant
-    {               
+    {
+
+        public static string GetProductPath
+            = Path.Combine(Environment.CurrentDirectory, @"Data\Products.json");
+
         public const int PLATO_DIA = 120;
         public const int PICA_POLLO = 200;
         public const int GUINEO_CON_SALAMI = 100;

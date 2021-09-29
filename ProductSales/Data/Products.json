@@ -1,0 +1,317 @@
+[
+  {
+    "Id": "1",
+    "Name": "Licor Cloudberry",
+    "Category": "Bebidas",
+    "Stock": "10",
+    "UnitPrice": "450.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "2",
+    "Name": "Cerveza tibetana Barley",
+    "Category": "Bebidas",
+    "Stock": "20",
+    "UnitPrice": "500.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "3",
+    "Name": "Peras secas orgánicas del tío Bob",
+    "Category": "Frutas/Verduras",
+    "Stock": "12",
+    "UnitPrice": "160.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "4",
+    "Name": "Buey Mishi Kobe",
+    "Category": "Carnes",
+    "Stock": "18",
+    "UnitPrice": "60.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "5",
+    "Name": "Pez espada",
+    "Category": "Pescado/Marisco",
+    "Stock": "12",
+    "UnitPrice": "450.00",
+    "Discount": "10",
+    "Tax": "0"
+  },
+  {
+    "Id": "6",
+    "Name": "Queso Cabrales",
+    "Category": "Lácteos",
+    "Stock": "27",
+    "UnitPrice": "500.00",
+    "Discount": "0",
+    "Tax": "0"
+  },
+  {
+    "Id": "7",
+    "Name": "Queso Manchego La Pastora",
+    "Category": "Lácteos",
+    "Stock": "15",
+    "UnitPrice": "600.00",
+    "Discount": "10",
+    "Tax": "0"
+  },
+  {
+    "Id": "8",
+    "Name": "Algas Konbu",
+    "Category": "Pescado/Marisco",
+    "Stock": "94",
+    "UnitPrice": "90.00",
+    "Discount": "10",
+    "Tax": "0"
+  },
+  {
+    "Id": "9",
+    "Name": "Cuajada de judías",
+    "Category": "Frutas/Verduras",
+    "Stock": "75",
+    "UnitPrice": "98.00",
+    "Discount": "0",
+    "Tax": "0"
+  },
+  {
+    "Id": "10",
+    "Name": "Postre de merengue Pavlova",
+    "Category": "Repostería",
+    "Stock": "65",
+    "UnitPrice": "25.00",
+    "Discount": "10",
+    "Tax": "0"
+  },
+  {
+    "Id": "11",
+    "Name": "Cordero Alice Springs",
+    "Category": "Carnes",
+    "Stock": "61",
+    "UnitPrice": "80.00 ",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "12",
+    "Name": "Langostinos tigre Carnarvon",
+    "Category": "Pescado/Marisco",
+    "Stock": "12",
+    "UnitPrice": "200.00",
+    "Discount": "0",
+    "Tax": "18"
+  },
+  {
+    "Id": "13",
+    "Name": "Pastas de té de chocolate",
+    "Category": "Repostería",
+    "Stock": "25",
+    "UnitPrice": "300.00",
+    "Discount": "0",
+    "Tax": "18"
+  },
+  {
+    "Id": "14",
+    "Name": "Mermelada de Sir Rodney's",
+    "Category": "Repostería",
+    "Stock": "40",
+    "UnitPrice": "750.00 ",
+    "Discount": "0",
+    "Tax": "15"
+  },
+  {
+    "Id": "15",
+    "Name": "Bollos de Sir Rodney's",
+    "Category": "Repostería",
+    "Stock": "50",
+    "UnitPrice": "850.00",
+    "Discount": "0",
+    "Tax": "18"
+  },
+  {
+    "Id": "16",
+    "Name": "Pan de centeno crujiente estilo Gustaf's",
+    "Category": "Granos/Cereales",
+    "Stock": "70",
+    "UnitPrice": "21.00 ",
+    "Discount": "0",
+    "Tax": "18"
+  },
+  {
+    "Id": "17",
+    "Name": "Pan fino",
+    "Category": "Granos/Cereales",
+    "Stock": "150",
+    "UnitPrice": "50.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "18",
+    "Name": "Refresco Guaraná Fantástica",
+    "Category": "Bebidas",
+    "Stock": "48",
+    "UnitPrice": "25.00",
+    "Discount": "10",
+    "Tax": "0"
+  },
+  {
+    "Id": "19",
+    "Name": "Crema de chocolate y nueces NuNuCa",
+    "Category": "Repostería",
+    "Stock": "75",
+    "UnitPrice": "50.00 ",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "20",
+    "Name": "Ositos de goma Gumbär",
+    "Category": "Repostería",
+    "Stock": "100",
+    "UnitPrice": "15.00",
+    "Discount": "0",
+    "Tax": "18"
+  },
+  {
+    "Id": "21",
+    "Name": "Chocolate Schoggi",
+    "Category": "Repostería",
+    "Stock": "100",
+    "UnitPrice": "40.00",
+    "Discount": "10",
+    "Tax": "0"
+  },
+  {
+    "Id": "22",
+    "Name": "Salchicha Thüringer",
+    "Category": "Carnes",
+    "Stock": "50",
+    "UnitPrice": "200.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "23",
+    "Name": "Arenque blanco del noroeste",
+    "Category": "Pescado/Marisco",
+    "Stock": "10",
+    "UnitPrice": "45.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "24",
+    "Name": "Queso gorgonzola Telino",
+    "Category": "Lácteos",
+    "Stock": "12",
+    "UnitPrice": "50.00",
+    "Discount": "0",
+    "Tax": "0"
+  },
+  {
+    "Id": "25",
+    "Name": "Queso Mascarpone Fabioli",
+    "Category": "Lácteos",
+    "Stock": "24",
+    "UnitPrice": "35.00",
+    "Discount": "10",
+    "Tax": "0"
+  },
+  {
+    "Id": "26",
+    "Name": "Queso de cabra",
+    "Category": "Lácteos",
+    "Stock": "500",
+    "UnitPrice": "10.00",
+    "Discount": "10",
+    "Tax": "0"
+  },
+  {
+    "Id": "27",
+    "Name": "Escabeche de arenque",
+    "Category": "Pescado/Marisco",
+    "Stock": "24",
+    "UnitPrice": "20.00",
+    "Discount": "0",
+    "Tax": "18"
+  },
+  {
+    "Id": "28",
+    "Name": "Salmón ahumado Gravad",
+    "Category": "Pescado/Marisco",
+    "Stock": "12",
+    "UnitPrice": "30.00",
+    "Discount": "0",
+    "Tax": "0"
+  },
+  {
+    "Id": "29",
+    "Name": "Vino Côte de Blaye",
+    "Category": "Bebidas",
+    "Stock": "12",
+    "UnitPrice": "300.00",
+    "Discount": "0",
+    "Tax": "18"
+  },
+  {
+    "Id": "30",
+    "Name": "Licor verde Chartreuse",
+    "Category": "Bebidas",
+    "Stock": "500",
+    "UnitPrice": "20.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "31",
+    "Name": "Carne de cangrejo de Boston",
+    "Category": "Pescado/Marisco",
+    "Stock": "16",
+    "UnitPrice": "20.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "32",
+    "Name": "Crema de almejas estilo Nueva Inglaterra",
+    "Category": "Pescado/Marisco",
+    "Stock": "200",
+    "UnitPrice": "10.00",
+    "Discount": "10",
+    "Tax": "18"
+  },
+  {
+    "Id": "33",
+    "Name": "Tallarines de Singapur",
+    "Category": "Granos/Cereales",
+    "Stock": "32",
+    "UnitPrice": "15.00",
+    "Discount": "10",
+    "Tax": "0"
+  },
+  {
+    "Id": "34",
+    "Name": "Café de Malasia",
+    "Category": "Bebidas",
+    "Stock": "16",
+    "UnitPrice": "50.00",
+    "Discount": "0",
+    "Tax": "0"
+  },
+  {
+    "Id": "35",
+    "Name": "Manzanas secas Manjimup",
+    "Category": "Frutas/Verduras",
+    "Stock": "83",
+    "UnitPrice": "60.00",
+    "Discount": "15",
+    "Tax": "0"
+  }
+]
